@@ -3,3 +3,31 @@ yarn tsc --init
 prisma init
 
 npx prisma migrate dev --name init
+
+#Playground
+----
+mutation {
+  signUp(data: {email: "segundo@segundo.com.br", password: "12345678"}) {
+    id,
+    email,
+    createdAt
+  }
+}
+----
+mutation {
+  login(data: {email: "segundo@segundo.com.br", password: "12345678"}) {
+   user {
+    email,
+    createdAt,
+  },
+    token
+  }
+}
+----
+query {
+  privateInfo(token: "1e8429fa-1302-40d7-8679-b6ed97cc66c1") {
+    email,
+    password,
+    createdAt
+  }
+}
