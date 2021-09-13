@@ -1,14 +1,14 @@
 {
-  "name": "prisma-graphql-auth",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "ts-node-dev --no-notify --respawn --transpile-only src/index.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+	"name": "prisma-graphql-auth",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "ts-node-dev --no-notify --respawn --transpile-only src/index.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
 	"dependencies": {
 		"@prisma/client": "^2.24.1",
 		"apollo-server": "^2.25.0",
